@@ -32,6 +32,7 @@ outputs:
         - {{ compiler('cxx') }}
         - {{ stdlib('c') }}
         - {{ compiler('c') }}
+        - {{ stdlib("c") }}
         - ninja
         - cmake
         - pkg-config
