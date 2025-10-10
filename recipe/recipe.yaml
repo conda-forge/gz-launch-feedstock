@@ -23,7 +23,7 @@ source:
 build:
   skip:
     - ppc64le
-  number: 3
+  number: 4
 
 outputs:
   - package:
