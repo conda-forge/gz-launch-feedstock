@@ -23,7 +23,7 @@ source:
 build:
   skip:
     - ppc64le
-  number: 0
+  number: 1
 
 outputs:
   - package:
@@ -170,7 +170,7 @@ outputs:
       name: gz-harmonic
       version: 1.0.0
     build:
-      number: 0
+      number: 1
     requirements:
       # Based on collection-harmonic.yaml (Harmonic release mapping)
       run:
