@@ -22,7 +22,7 @@ source:
 build:
   skip:
     - ppc64le
-  number: 2
+  number: 3
 
 outputs:
   - package:
@@ -176,7 +176,7 @@ outputs:
       name: gz-ionic
       version: 1.0.0
     build:
-      number: 2
+      number: 3
     requirements:
       # Based on collection-ionic.yaml (Ionic release mapping)
       run:
