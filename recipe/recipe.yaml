@@ -3,7 +3,7 @@ schema_version: 1
 context:
   component_name: launch
   repo_name: ${{ "gz-" ~ component_name }}
-  version: 9.0.0
+  version: "9.0.1"
   major_version: "9"
   name: ${{ repo_name }}
   component_version: ${{ component_name ~ major_version }}
@@ -15,14 +15,14 @@ recipe:
 
 source:
   - url: https://github.com/gazebosim/${{ repo_name }}/archive/${{ repo_name }}${{ major_version }}_${{ version }}.tar.gz
-    sha256: 4f1bd0ac59cf9da897307ceaf781eefe498afb7d3175dc72b9689e6fca727ad6
+    sha256: 3dfe32cac8b1f5d7cb89592964c89c5401c19dc475b4f8b0833fc16bdf517594
     patches:
       - unvendor_backward.patch
 
 build:
   skip:
     - ppc64le
-  number: 5
+  number: 0
 
 outputs:
   - package:
@@ -103,7 +103,7 @@ outputs:
       name: gz-jetty
       version: 1.0.0
     build:
-      number: 5
+      number: 0
     requirements:
       # See https://github.com/gazebo-tooling/gazebodistro/blob/680c7f921d7c05ea89742cf9f6e3c6e669ada291/collection-jetty.yaml
       run:
