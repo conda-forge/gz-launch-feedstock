@@ -22,7 +22,7 @@ source:
 build:
   skip:
     - ppc64le
-  number: 6
+  number: 7
 
 outputs:
   - package:
@@ -40,7 +40,7 @@ outputs:
         - ${{ stdlib('c') }}
         - ninja
         - cmake
-        - pkg-config
+        - pkgconf
         - if: build_platform != target_platform
           then:
             - python
@@ -176,7 +176,7 @@ outputs:
       name: gz-ionic
       version: 1.0.0
     build:
-      number: 6
+      number: 7
     requirements:
       # Based on collection-ionic.yaml (Ionic release mapping)
       run:
