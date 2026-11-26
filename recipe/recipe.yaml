@@ -41,7 +41,7 @@ outputs:
         - ${{ compiler('c') }}
         - ninja
         - cmake
-        - pkg-config
+        - pkgconf
       host:
         - libgz-cmake3
         - libgz-common5
